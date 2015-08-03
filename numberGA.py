@@ -297,6 +297,4 @@ if __name__ == '__main__':
                 print "No solutions in this test run"
                 b_found = True
 
-
-        print ''
-        print ''
+    print '\n\n'
