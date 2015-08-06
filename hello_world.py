@@ -2,8 +2,8 @@ import random
 import string
 
 CROSSOVER_RATE = 0.9
-MUTATION_RATE = 0.02
-POPULATION_SIZE = 4096
+MUTATION_RATE = 0.05
+POPULATION_SIZE = 40000
 MAX_ALLOWABLE_GENERATIONS = 200
 
 CHARACTERS = string.letters + string.digits + string.punctuation + string.whitespace
@@ -32,7 +32,7 @@ def fitness(value, target):
 
 
 def selection_function(pop):
-    return random.randint(0, len(pop)/3)
+    return random.randint(0, len(pop)/4)
 
 
 def mutate(val):
