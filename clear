@@ -1,0 +1,42 @@
+[33mcommit e733f334fb5cc6fc6a7ccb05529ca297140cae6a[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Thu Aug 6 18:03:14 2015 +0530
+
+    Trying to add GA in tic tac toe
+
+[33mcommit f3cde0e6b29efb85e2448feedd94066661343377[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Wed Aug 5 18:41:21 2015 +0530
+
+    Hello World using genetic Algorithm
+
+[33mcommit 9f1a60c4802c0a5425b11816e1cb61c49b117fe0[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Mon Aug 3 22:57:40 2015 +0530
+
+    small change
+
+[33mcommit 96c212704d43c06bc8ca95bea61d0ab58dd22425[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Mon Aug 3 20:00:50 2015 +0530
+
+    Done with one error. There is an extra symbol at the beginning and sometimes it can't evolve
+
+[33mcommit 95461708184dc38aa293dc79cad3865a67320178[m
+Merge: 6a0f086 b368a2a
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Mon Aug 3 14:24:49 2015 +0530
+
+    Merge branch 'master' of https://github.com/shubham1810/geneticAlgorithmsLearning
+
+[33mcommit 6a0f08685e9521251adac5ab5b8eeb649b014352[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Mon Aug 3 14:24:38 2015 +0530
+
+    First proper commit
+
+[33mcommit b368a2a78a9a3351af2fffbdbc3cbf7bffa38801[m
+Author: Shubham Dokania <skd.1810@gmail.com>
+Date:   Mon Aug 3 14:24:00 2015 +0530
+
+    Initial commit
