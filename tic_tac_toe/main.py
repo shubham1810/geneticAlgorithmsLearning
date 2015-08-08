@@ -7,9 +7,11 @@ class Board():
         self.board = [['-' for j in range(3)] for i in range(3)]
 
     def print_board(self):
-        print self.board[0]
-        print self.board[1]
-        print self.board[2]
+        print ' ' + self.board[0][0] + ' | ' + self.board[0][1] + ' | ' + self.board[0][2]
+        print '___________'
+        print ' ' + self.board[1][0] + ' | ' + self.board[1][1] + ' | ' + self.board[1][2]
+        print '___________'
+        print ' ' + self.board[2][0] + ' | ' + self.board[1][1] + ' | ' + self.board[2][2]
 
     def check_winner(self):
 
@@ -99,21 +101,21 @@ class Board():
 
         if self.board[0][0] == '-':
             allowed.append(0)
-        elif self.board[0][1] == '-':
+        if self.board[0][1] == '-':
             allowed.append(1)
-        elif self.board[0][2] == '-':
+        if self.board[0][2] == '-':
             allowed.append(2)
-        elif self.board[1][0] == '-':
+        if self.board[1][0] == '-':
             allowed.append(3)
-        elif self.board[1][1] == '-':
+        if self.board[1][1] == '-':
             allowed.append(4)
-        elif self.board[1][2] == '-':
+        if self.board[1][2] == '-':
             allowed.append(5)
-        elif self.board[2][0] == '-':
+        if self.board[2][0] == '-':
             allowed.append(6)
-        elif self.board[2][1] == '-':
+        if self.board[2][1] == '-':
             allowed.append(6)
-        elif self.board[2][2] == '-':
+        if self.board[2][2] == '-':
             allowed.append(8)
 
         return allowed
@@ -121,17 +123,20 @@ class Board():
 
 def main():
 
-    player = 1
+    player = 2
     new_board = Board()
+    #print new_board.moves_allowed()
     turn = random.choice(new_board.moves_allowed())
+    #print "turn = " + str(turn)
 
-    print "Fuck this too"
+    while (len(new_board.moves_allowed()) is not 0) or (new_board.check_winner() == 0):
+        player = new_board.play(player, turn)
+
+        if player == 0:
+            break
+        turn = random.choice(new_board.moves_allowed())
+        print '================================='
 
 
 if __name__ == '__main__':
-    a = Board()
-    print a.play(1, 0)
-    print a.play(1, 4)
-    print a.play(1, 8)
-
-    print a.board[0][0]
+    main()

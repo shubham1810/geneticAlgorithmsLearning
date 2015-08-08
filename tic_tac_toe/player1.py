@@ -13,3 +13,8 @@ class Player1():
         board.play()
 
         return "Fuck off"
+
+
+if __name__ == '__main__':
+    list_here = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    print random.choice(list_here)
