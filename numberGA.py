@@ -1,5 +1,4 @@
 import random
-import string
 
 CROSSOVER_RATE = 0.8
 MUTATION_RATE = 0.002

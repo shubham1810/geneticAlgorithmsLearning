@@ -4,7 +4,8 @@ import random
 class Player1():
 
     def __init__(self):
-        print "I am the main player"
+        self.player = 1
+        print "Player 1 Initialized...Awaiting Player 2..."
 
     def play(self, board, player):
 
